@@ -109,9 +109,34 @@
 			</section>
 			<section class="footer_copyright">
 				<p>Разработано:</p>
-				<a class="btn" href="#">&copy WolkovWeb</a>
+				<a class="btn" href="http://yandex.ru/mail">&copy Wolkov_Web</a>
 			</section>
 		</div>
 	</footer>
+	<div class="modal_content">
+		<button class="modal_content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal_content-title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form class="login_form" action="#" method="GET">
+			<input class="icon_user" type="text" name="login" placeholder="Логин" required>
+			<input class="icon_password" type="password" name="pass" placeholder="Пароль" required>
+			<label class="login_checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox_indicator"></span>
+				<span>Запомните меня</span>
+			</label>
+			<a href="" class="restore">Я забыл пароль</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal_content-map">
+		<button class="modal_content-close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex_map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7995.083318028432!2d30.322631561536717!3d59.93594482270635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2af9b9ca55986949!2sHeadbusters+Barbershop!5e0!3m2!1sru!2sru!4v1498580203838" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="modal_overlay"></div>
+	
+	<script src="js/popup&map.js"></script>
 </body>
 </html>

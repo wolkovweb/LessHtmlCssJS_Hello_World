@@ -89,9 +89,33 @@
 			</section>
 			<section class="footer_copyright">
 				<p>Разработано:</p>
-				<a class="btn" href="#">&copy Wolkov_Web</a>
+				<a class="btn" href="http://yandex.ru/mail">&copy Wolkov_Web</a>
 			</section>
 		</div>
 	</footer>
+	<div class="modal_content">
+		<button class="modal_content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal_content-title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form class="login_form" action="#" method="POST">
+			<input class="icon_user" type="text" name="login" placeholder="Логин">
+			<input class="icon_password" type="password" name="pass" placeholder="Пароль">
+			<label class="login_checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox_indicator"></span>
+				<span>Запомните меня</span>
+			</label>
+			<a href="" class="restore">Я забыл пароль</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal_content-map">
+		<button class="modal_content-close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex_map"></div>
+	</div>
+	<div class="modal_overlay"></div>
+	
+	<script src="js/popup&map.js"></script>
+</body>
 </body>
 </html>
