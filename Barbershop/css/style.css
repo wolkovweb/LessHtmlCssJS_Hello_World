@@ -84,9 +84,6 @@ body {
 .main_navigation {
 	float: left;
 	width: 780px;
-	
-	/*для визуального отображения постороения сетки*/
-	/* border: 3px solid #00f; */
 }
 
 .main_navigation ul {

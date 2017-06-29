@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Gllacy Shop</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 	<header class="main_header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main_navigation">
-				<a href="#" class="main_navigation__logo"></a>
+				<a class="main_navigation__logo" href="#"><img src="img/logo_navigation.png" alt="Gllacy Shop" width="154" height="64"></a>
 				<ul>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Доставка и оплата</a></li>
@@ -17,9 +18,11 @@
 				</ul>
 			</nav>
 			<div class="user_block">
-				<div class="user_block__search"><input type="text" name="search"><a href=""></a></div>
-				<a href="" class="user_block__login">Вход</a>
 				<a href="" class="user_block__basket">Пусто</a>
+				<a href="" class="user_block__login">Вход</a>
+				<div class="user_block__search">
+					<input type="text" name="search"><a href=""></a>
+				</div>
 			</div>
 			<div class="info_block"><span class="info_block__worktime">с 10 до 20, ежедневно</span><span class="info_block__phone">8 812 450-25-25</span></div>
 		</div>
@@ -34,106 +37,108 @@
 				<a class="slider_btn--radio" href="№"></a>
 			</div>
 		</div>
-		<div class="free">
-			<section class="free_item">
+		<div class="banner clearfix">
+			<section class="banner__item">
 				<h2>Малинка даром!</h2>
-				<p></p>
+				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказа банку малинового варенья бесплатно.</p>
 				<a class="btn" href="#">Хочу варенье!</a>
 			</section>
-			<section class="free_item">
+			<section class="banner__item">
 				<h2>Шоколадки даром!</h2>
-				<p></p>
-				<a href="#" class="btn">Хочу шоколадки!</a>
+				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+				<a class="btn" href="#">Хочу шоколадки!</a>
 			</section>
-			<div class="hit">
-				<article class="hit_item">
-					<div class="hit_item--marker">хит</div>
-					<span><strong>310Р</strong>/кг</span>
-					<img src="#" alt="" >
-					<span></span>
-				</article>
-				<article class="hit_item">
-					<div class="hit_item--marker">хит</div>
-					<span><strong>380Р</strong>/кг</span>
-					<img src="#" alt="" >
-					<span></span>
-				</article>
-				<article class="hit_item">
-					<div class="hit_item--marker">хит</div>
-					<span><strong>355Р</strong>/кг</span>
-					<img src="#" alt="" >
-					<span></span>
-				</article>
-				<article class="hit_item">
-					<div class="hit_item--marker">хит</div>
-					<span><strong>415Р</strong>/кг</span>
-					<img src="#" alt="" >
-					<span></span>
-				</article>
-			</div>
+		</div>
+		<div class="hits clearfix">
+			<article class="hits__item">
+				<div class="hits__item--marker">хит</div>
+				<span><strong>310Р</strong>/кг</span>
+				<img src="img/gllacy_hit_1.png" alt="" width="267" height="267">
+				<span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+			</article>
+			<article class="hits__item">
+				<div class="hits__item--marker">хит</div>
+				<span><strong>380Р</strong>/кг</span>
+				<img src="img/gllacy_hit_2.png" alt="" width="267" height="267">
+				<span>Сливочно-кофейное с кусочками шоколада</span>
+			</article>
+			<article class="hits__item">
+				<div class="hits__item--marker">хит</div>
+				<span><strong>355Р</strong>/кг</span>
+				<img src="img/gllacy_hit_3.png" alt="" width="267" height="267">
+				<span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+			</article>
+			<article class="hits__item">
+				<div class="hits__item--marker">хит</div>
+				<span><strong>415Р</strong>/кг</span>
+				<img src="img/gllacy_hit_4.png" alt="" width="267" height="267">
+				<span>Сливочное крем-брюле с карамельной подливкой</span>
+			</article>
 		</div>
 		<section class="adventage">
-			<h3>gfg</h3>
-			<div class="adventage__content">
+			<h3>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+			<div class="adventage__content clearfix">
 				<div class="adventage__content--left">
-					<p></p>
-					<p></p>
+					<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+					<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
 				</div>
 				<div class="adventage__content--right">
-					<p></p>
-					<p></p>
+					<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+					<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 				</div>
 			</div>
 		</section>
-		<section class="news">
-			<h2>ggfgfg</h2>
-			<a href="#"><span></span></a>
-		</section>
-		<form class="mailing" action="#" method="POST">
-			<p></p>
-			<input type="text" name="email" placeholder="Электронная почта" required="">
-			<button class="btn" type="submit">Отправить</button>
-		</form>
+		<div class="content_news_mailling clearfix"> <!--Не знал как назвать этот кусок сорри!-->
+			<section class="news">
+				<h2>Новое в нашем блоге</h2>
+				<a href="#"><span>10  способов сервировки фруктовых щербетов к столу</span></a>
+			</section>
+			<form class="mailing" action="#" method="POST">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+				<input type="text" name="email" placeholder="Электронная почта" required="">
+				<button class="btn" type="submit">Отправить</button>
+			</form>
+		</div>
 		<div class="contacts">
 			<div id="yandex-ru">
-				<img src="#" alt="" class="marker_map">
+				<img src="#" alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург" class="marker_map">
 			</div>
 			<section class="contacts__block">
-				<h4>vcv</h4>
-				<p></p>
-				<h4>gfg</h4>
+				<h4>Адрес главного офиса и офлайн магазина:</h4>
+				<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+				<h4>Для заказов по телефону:</h4>
 				<p>8 812 450-25-25</p>
-				<span></span>
+				<span>(с 10 до 20 ежедневно)</span>
 				<a href="#" class="btn">Форма обратной связи</a>
 			</section>
 		</div>
 	</main>
 	<footer class="main_footer">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="footer__social">
-				<a href="#" class="social__btn"></a>
-				<a href="#" class="social__btn"></a>
-				<a href="#" class="social__btn"></a>
-				<a href="#" class="social__btn"></a>
-				<div class="documents">
-					<div class="documents__left">
-						<ul>
-							<li><a href="#">Для поставщиков</a></li>
-							<li><a href="#">О производстве</a></li>
-						</ul>
-					</div>
-					<div class="documents__right">
-						<ul>
-							<li><a href="#">Наши документы</a></li>
-							<li><a href="#">Экологические стандарты</a></li>
-						</ul>
-					</div>
+				<a href="#" class="social__btn">Twitter</a>
+				<a href="#" class="social__btn">Instagram</a>
+				<a href="#" class="social__btn">Facebook</a>
+				<a href="#" class="social__btn">Вконтакте</a>
+			</div>
+			<div class="documents clearfix">
+				<div class="documents__left">
+					<ul>
+						<li><a href="#">Для поставщиков</a></li>
+						<li><a href="#">О производстве</a></li>
+					</ul>
 				</div>
-				<div class="copyright">
-					<a><img src="#" alt="HTML Academy"></a>
-					<span>Дизайн HTML Academy &copy; 2016</span>
-					<span>Верстка Волчков Д.В.&copy; 2017</span>
+				<div class="documents__right">
+					<ul>
+						<li><a href="#">Наши документы</a></li>
+						<li><a href="#">Экологические стандарты</a></li>
+					</ul>
 				</div>
+			</div>
+			<div class="copyright">
+				<a><img src="#" alt="HTML Academy"></a>
+				<span>Дизайн HTML Academy &copy; 2016</span>
+				<span>Верстка Волчков Д.В.&copy; 2017</span>
 			</div>
 		</div>
 	</footer>
