@@ -1,10 +1,11 @@
 html, body {
 	min-width: 900px;
-	min-height: 2450px;
+	max-height: 2450px;
 	margin: 0 auto;
 	padding: 0;
 	
 	font-size: 14px;
+	font-family: 'Roboto', serif;
 	color: white;
 }
 
@@ -28,7 +29,7 @@ body {
 	margin: 0 auto;
 	padding: 0 27px;
 	
-	outline: yellow solid 2px;
+	/* outline: yellow solid 2px; */
 }
 
 .btn {
@@ -50,8 +51,6 @@ body {
 
 .main_header {
 	width: 100%;
-	
-	outline: red solid 2px;
 }
 
 .main_header .container {
@@ -141,11 +140,23 @@ margin-bottom: -20px;
 	background: url('../img/gllacy_slide_1.png') no-repeat;
 	background-size: contain;
 	
-	outline: red solid 2px;
+	/* outline: red solid 2px; */
 }
 
 .slider h2 {
-	margin: 0;
+	margin: 0 -20px;
+	padding-top: 310px;
+	margin-bottom: 28px;
+	
+	font-size: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.btn--slider {
+	margin: 0 190px;
+	
+	font-size: 32px;
 }
 
 .banner {
@@ -155,7 +166,6 @@ margin-bottom: -20px;
 }
 
 .banner__item {
-	position: relative;
 	float: left;
 	
 	width: 520px;
@@ -179,7 +189,9 @@ margin-bottom: -20px;
 }
 
 .banner__item p {
-	margin-bottom: 45px;
+	margin-bottom: 35px;
+	
+	font-size: 18px;
 }
 
 .banner__item .btn {
@@ -191,6 +203,7 @@ margin-bottom: -20px;
 }
 
 .hits__item {
+	position: relative;
 	float: left;
 	
 	margin-right: 26px;
@@ -207,32 +220,60 @@ margin-bottom: -20px;
 	width: 60px;
 	height: 60px;
 	
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 60px;
 	color: black;
 	
 	background-color: white;
 	border-radius: 60px;
 }
 
+.hits__item--price {
+	position: absolute;
+	left: 0;
+	top: 190px;
+	
+	display: block;
+	
+	font-size: 45px;
+}
+
+.hits__item p {
+	font-size: 16px;
+	text-align: center;
+}
+
 .adventage {
 	margin-bottom: 40px;
 	padding: 28px 21px;
+	
+	color: #4f4f4f;
+	
+	background: url('../img/pattern_waffer.jpg');
+	border-radius: 20px;
 }
 
 .adventage h3 {
 	margin: 0;
-	margin-bottom: 12px;
+	
+	font-size: 24px;
 }
 
 .adventage__content {
+	font-size: 16px;
 }
 
 .adventage__content--left {
+	position: relative;
 	float: left;
 	
 	width: 540px;
 }
 
 .adventage__content--right {
+	position: relative;
 	float: right;
 	
 	width: 540px;
@@ -242,16 +283,102 @@ margin-bottom: -20px;
 	margin-bottom: 40px;
 }
 
+.adventage__content p {
+	display: block;
+	margin: 24px 0;
+	margin-left: 56px;
+}
+
+.adventage__content p:last-child {
+	margin-bottom: 0;
+}
+
+.adventage__content p::before {
+    content: "";
+	position: absolute;
+	left: 0;
+	
+	display: block;
+	width: 47px;
+	height: 47px;
+}
+
+p.gllacy::before {
+	top: 10px;
+	
+    background: url('../img/sprite_content.png');
+}
+
+p.list::before {
+	top: 91px;
+	
+    background: url('../img/sprite_content.png');
+	background-position: 0 47px;
+}
+
+p.cow::before {
+	top: 10px;
+	
+    background: url('../img/sprite_content.png');
+	background-position: 47px 0;
+}
+
+p.temp::before {
+	top: 85px;
+	
+    background: url('../img/sprite_content.png');
+	background-position: 47px 47px;
+}
+
 .news {
 	float: left;
 	
-	width: 560px;
+	display; block;
+	width: 510px;
+	height: 154px;
+	padding: 20px 25px;
+	
+	color: #666666;
+	
+	background: url('../img/sweet_bk.jpg');
+	border-radius: 20px;
+}
+
+.news h2 {
+	font-size: 16px;
+}
+
+.news a {
+	font-size: 24px;
 }
 
 .mailing {
 	float: right;
 	
-	width: 560px;
+	display; block;
+	width: 510px;
+	padding: 20px 25px;
+	
+	font-size: 16px;
+	color: #666666;
+	
+	background: url('../img/mail_bk.jpg');
+	border-radius: 20px;
+}
+
+.mailing p {
+	margin-bottom: 30px;
+}
+
+.mailing input {
+	float: left;
+	
+	padding: 10px;
+	padding-right: 160px;
+}
+
+.mailing button {
+	float: right;
 }
 
 .contacts {
@@ -263,6 +390,15 @@ margin-bottom: -20px;
 	
 	background: url('../img/background_map.jpg') no-repeat;
 	background-size: 100% 430px; /*contain; */
+}
+
+.contacts h4 {
+	font-size: 14px;
+}
+
+.contacts p {
+	font-size: 18px;
+	font-weight: 700;
 }
 
 /* ================================================== */
@@ -299,6 +435,8 @@ margin-bottom: -20px;
 	min-height: 27px;
 	margin-top: 18px;
 	margin-right: 215px;
+	
+	font-size: 13px;
 }
 
 .documents a {
@@ -328,4 +466,6 @@ margin-bottom: -20px;
 	min-height: 55px;
 	margin: 0;
 	padding: 0;
+	
+	font-size: 12px;
 }
