@@ -60,6 +60,10 @@ body {
 	padding: 10px 27px;
 }
 
+.main_header a {
+	color: white;
+}
+
 .main_navigation {
 	float: left;
 	
@@ -74,6 +78,10 @@ body {
 	height: 64px;
 	margin-left: -5px;
 	margin-right: 30px;
+}
+
+.main_header a {
+	color: white;
 }
 
 .main_navigation ul {
@@ -333,10 +341,10 @@ p.temp::before {
 .news {
 	float: left;
 	
-	display; block;
+	display: block;
 	width: 510px;
-	height: 154px;
-	padding: 20px 25px;
+	padding: 25px 20px;
+	padding-bottom: 86px;
 	
 	color: #666666;
 	
@@ -345,19 +353,27 @@ p.temp::before {
 }
 
 .news h2 {
+	margin: 0;
+	margin-bottom: 10px;
+	
 	font-size: 16px;
 }
 
 .news a {
+	display: inline-block;
+	
 	font-size: 24px;
+	font-weight: bold;
+	color: #333333;
 }
 
 .mailing {
 	float: right;
 	
-	display; block;
+	display: block;
 	width: 510px;
 	padding: 20px 25px;
+	padding-bottom: 34px;
 	
 	font-size: 16px;
 	color: #666666;
@@ -367,7 +383,7 @@ p.temp::before {
 }
 
 .mailing p {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .mailing input {
@@ -388,8 +404,10 @@ p.temp::before {
 	margin: 0 -27px;
 	margin-bottom: 20px;
 	
+	color: #333333;
+	
 	background: url('../img/background_map.jpg') no-repeat;
-	background-size: 100% 430px; /*contain; */
+	background-size: cover;
 }
 
 .contacts h4 {
@@ -399,6 +417,28 @@ p.temp::before {
 .contacts p {
 	font-size: 18px;
 	font-weight: 700;
+}
+
+.contacts img {
+	position: absolute;
+	top: 33%;
+	left: 24%;
+	
+	display: block;
+}
+
+.contacts__block {
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	width: 260px;
+	margin-top: 60px;
+	margin-right: 27px;
+	padding: 30px;
+	
+	background-color: white;
+	border-radius: 20px;
 }
 
 /* ================================================== */
@@ -425,6 +465,9 @@ p.temp::before {
 }
 
 .footer__social a {
+	display: info_block;
+	
+	font-size: 0;
 	text-decoration: none;
 }
 
@@ -440,6 +483,7 @@ p.temp::before {
 }
 
 .documents a {
+	color: white;
 	text-decoration: none;
 }
 
@@ -468,4 +512,8 @@ p.temp::before {
 	padding: 0;
 	
 	font-size: 12px;
+}
+
+.copyright span {
+	display: block;
 }
